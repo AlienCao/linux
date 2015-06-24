@@ -1,0 +1,9 @@
+添加用户  直接拥有SSH权限
+useradd
+passwd
+
+把用户改为root用户
+修改 /etc/passwd 文件，找到如下行，把用户ID修改为 0 ，如下所示：
+原：tommy:x:0:33:tommy:/data/webroot:/bin/bash
+改：tommy:x:0:0:tommy:/data/webroot:/bin/bash
+
